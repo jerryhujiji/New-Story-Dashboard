@@ -1,0 +1,70 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    grid-gap: 15px;
+    height: 100vh;
+  }
+  
+
+  .header {
+    grid-area: header;
+    background-color: #F5F5F5;
+  }
+  
+  .sidenav {
+    grid-area: sidenav;
+    background-color: #2D2A2B;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .sidenav-list {
+    padding: 5px 10px;
+    margin-top: 200px;
+    
+  }
+
+  .sidenav-list-item {
+    padding: 25px 25px 25px 50px;
+    color: #8D8D8D;
+  }
+
+  .sidenav-list-item:hover {
+    background-color:#F1F4F9;
+    cursor: pointer;
+    color: #2D2A2B;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #F1F4F9;
+  }
+  
+
+  .Dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+    grid-auto-rows: 94px;
+    grid-gap: 40px;
+    margin: 15px;
+  }
+  
+  .card {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #FFFFFF;
+  }
+
+
+  .footer {
+    grid-area: footer;
+    background-color: #FFFFFF;
+  }
